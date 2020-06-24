@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
+    />
+    <title>Report a bug - Request feature</title>
+  </head>
+  <body>
+    <div class="container container-rotate">
+      <div class="modal modal-request">
+        <div class="modal-dialog">
+          <button class="close"><i class="fas fa-times"></i>ESC</button>
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title">Report a bug or request a feature</h5>
+            </div>
+            <div class="modal-body">
+              <form>
+                <div class="select-container">
+                  <label for="issue">I would like to</label>
+                  <select name="issue" id="issue">
+                    <option value="">Select a option</option>
+                    <option value="bug">Report a bug</option>
+                    <option value="feature">Request a feature</option>
+                  </select>
+                </div>
+                <div class="form-control">
+                  <label for="title">Title</label>
+                  <input type="text" placeholder="Enter the title" id="title" />
+                </div>
+                <div class="form-control">
+                  <label for="description">Description</label>
+                  <textarea
+                    type="text"
+                    placeholder="Enter the description"
+                    id="description"
+                    rows="4"
+                  ></textarea>
+                </div>
+                <button class="btn">Submit</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal modal-fail">
+        <div class="modal-dialog">
+          <button class="close"><i class="fas fa-times"></i>ESC</button>
+          <div class="modal-content">
+            <div class="modal-header">
+            </div>
+            <div class="modal-body">
+              <div class="content-fail">
+                <i class="fas fa-times"></i>
+                <p>Something went wrong… Please try again or contact Andrei at andrei@boardme.io.</p>
+              </div>
+            </div>
+            <div class="modal-footer">
+              <button class="btn btn-try">Try again</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal modal-success">
+        <div class="modal-dialog">
+          <button class="close"><i class="fas fa-times"></i>ESC</button>
+          <div class="modal-content">
+            <div class="modal-header">
+            </div>
+            <div class="modal-body">
+              <div class="content-success">
+                <i class="fas fa-check"></i>
+                <p>Thank you for reporting the bug. It’s very helpful for us! </p>
+              </div>
+            </div>
+            <div class="modal-footer">
+              <button class="btn btn-try">Close the window</button>
+              <a href="#">Report another bug</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
