@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:400,600,700&display=swap');
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	background-color: #191B1D;
+  font-family: 'Open Sans', sans-serif;
+  color: #fff;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 100vh;
+	margin: 0;
+}
+
+.container {
+  display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	gap: 20px;
+	width: 1165px;
+	margin: auto;
+  justify-items: center;
+}
+
+.card {
+  background-color: #22262C;
+  width: 100%;
+  min-width: 350px;
+  max-width: 450px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 608px;
+  padding: 35px 0;
+}
+
+.card-header {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: 165px;
+}
+
+.card-header h5 {
+  font-size: 25px;
+  font-weight: 600;
+  margin: 0;
+}
+
+.card-header .price {
+  font-size: 56px;
+  font-weight: bold;
+}
+
+.card-enterprise .card-header .price {
+  font-size: 36px;
+}
+.card-header .price small {
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.card-body {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  flex: 1;
+}
+
+.form-control {
+  width: 100%;
+  align-self: flex-start;
+}
+
+.form-control select {
+  width: 100%;
+  background-color: transparent;
+  color: #fff;
+  border: 1px solid #888;
+  border-radius: 3px;
+  font-family: inherit;
+  font-size: 20px;
+  padding: 20px;
+}
+.form-control .help-block {
+  font-size: 14px;
+  font-weight: 600px;
+  line-height: 19px;
+  padding-left: 15px;
+  color: #BC1E4A;
+  margin-top: 8px;
+}
+.benefits {
+  margin: 30px 0;
+}
+.benefit {
+  font-size: 16px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  line-height: 40px;
+}
+
+.benefit i {
+  margin-right: 8px;
+  color: #BC1E4A;
+  font-size: 6px;
+}
+
+.btn {
+  cursor: pointer;
+  background-color: transparent;
+  border: 1px solid #BC1E4A;
+  color: #fff;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family:  inherit;
+  font-size: 18px;
+  font-weight: 600;
+  padding: 14px 59px;
+  margin-top: 35px 0;
+}
+
+.btn:hover {
+  background-color: #BC1E4A;
+}
+
+@media(max-width: 1000px) {
+  body {
+    height: auto;
+  }
+  .container {
+    margin: 30px;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media(max-width: 768px) {
+  body {
+    height: auto;
+  }
+  .container {
+    margin: 30px;
+    grid-template-columns: 1fr;
+  }
+}
