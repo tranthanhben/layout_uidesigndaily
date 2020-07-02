@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="./styles.css">
+    <title>Dark Components</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="left">
+        <div class="dropdown-comp">
+          <div class="select-custom active">
+            <a href="#">Week</a>
+            <i class="fas fa-chevron-right"> </i>
+            <div class="dropdown">
+              <div>
+                <a href="#">Day <small>D</small></a>
+              </div>
+              <div>
+                <a href="#">Week <small>W</small></a>
+              </div>
+              <div>
+                <a href="#">Month <small>M</small></a>
+              </div>
+              <div>
+                <a href="#">Year <small>Y</small></a>
+              </div>
+              <div>
+                <a href="#">Schedule <small>A</small></a>
+              </div>
+              <hr />
+              <div class="checkbox-container">
+                <input type="checkbox" name="weekends" id="weekends" />
+                <label for="weekends">Show weekends</label>
+              </div>
+              <div class="checkbox-container">
+                <input
+                  type="checkbox"
+                  name="canceled_events"
+                  id="canceled_events"
+                />
+                <label for="canceled_events">Show canceled events</label>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="right">
+        <div class="progress-comp"></div>
+        <div class="options-comp">
+          <nav role="navigation">
+            <ul>
+              <li class="active">
+                <a href="#"><i class="fas fa-ellipsis-h"></i></a>
+                <ul class="dropdown">
+                  <li><a href="#">Export timesheet</a></li>
+                  <li><a href="#">Set Date & Time</a></li>
+                </ul>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

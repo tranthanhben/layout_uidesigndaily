@@ -1,0 +1,190 @@
+@import url("https://fonts.googleapis.com/css2?family=Muli:wght@400;700&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #2a3257;
+  color: #bec6e0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  font-family: "Muli", sans-serif;
+}
+
+.container {
+  width: 940px;
+  margin: auto;
+  background-color: #283054;
+  padding: 60px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  min-height: 600px;
+}
+
+.right,
+.left {
+  flex: 1;
+  height: 100%;
+}
+
+.dropdown-comp {
+  width: 224px;
+  height: 100%;
+}
+.select-custom {
+  width: 149px;
+  font-size: 16px;
+  border: 1px solid #bec6e0;
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 20px;
+  position: relative;
+  cursor: pointer;
+}
+
+.select-custom .dropdown {
+  background: #323b64;
+  color: #bec6e0;
+  visibility: hidden;
+  opacity: 0;
+  min-width: 244px;
+  position: absolute;
+  transition: all 0.5s ease;
+  top: 0;
+  left: 0;
+  margin-top: 60px;
+  display: none;
+	padding: 20px;
+	border-radius: 10px;
+	box-shadow: 0 9px 14px -6px rgba(23, 30, 61, 0.59);
+}
+.select-custom .dropdown hr {
+	border: 1px solid #252E58;
+}
+
+.select-custom:hover,
+.select-custom:focus-within,
+.select-custom.active {
+  background-color: #232b4d;
+  border-color: #232b4d;
+}
+
+.select-custom:hover i,
+.select-custom:focus-within i,
+.select-custom.active i {
+  transform: rotate(90deg);
+}
+.select-custom:hover .dropdown,
+.select-custom:focus-within .dropdown,
+.select-custom.active .dropdown {
+  visibility: visible;
+  opacity: 1;
+  display: block;
+}
+.dropdown div {
+	cursor: pointer;
+}
+
+.dropdown div a {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  color: inherit;
+  color: #bec6e0;
+  font-size: 16px;
+	line-height: 40px;
+}
+.dropdown div a small {
+	margin-right: 5px;
+  font-size: 16px;
+  color: #bec6e0;
+  opacity: 0.4;
+}
+.checkbox-container {
+  justify-content: space-between;
+	font-size: 16px;
+	line-height: 40px;
+  width: 100%;
+}
+.checkbox-container label {
+  /* color: #7a7e8c; */
+  font-weight: normal;
+}
+.checkbox-container a {
+  margin-left: auto;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+nav {
+  font-family: inherit;
+}
+
+ul {
+  background: #232b4d;
+  list-style: none;
+  margin: 0;
+  padding-left: 0;
+}
+
+li {
+  color: #bec6e0;
+  background: transparent;
+  display: block;
+  float: left;
+  padding: 1rem;
+  position: relative;
+  text-decoration: none;
+	transition-duration: 0.5s;
+	border-radius: 5px;
+}
+
+li a {
+  color: #bec6e0;
+}
+
+ul li.active,
+li:hover,
+li:focus-within {
+  background: #232b4d;
+  cursor: pointer;
+}
+
+li:focus-within a {
+  outline: none;
+}
+
+ul li ul {
+  background: #323b64;
+  visibility: hidden;
+  opacity: 0;
+	min-width: 208px;
+	border-radius: 10px;
+  position: absolute;
+  transition: all 0.5s ease;
+  margin-top: 1.2rem;
+  left: 0;
+	display: none;
+	box-shadow: 0 9px 14px -6px rgba(23, 30, 61, 0.59);
+}
+
+ul li.active > ul,
+ul li:hover > ul,
+ul li:focus-within > ul,
+ul li ul:hover {
+  visibility: visible;
+  opacity: 1;
+  display: block;
+}
+
+ul li ul li {
+  clear: both;
+	width: 100%;
+}

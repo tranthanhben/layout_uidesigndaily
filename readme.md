@@ -15,3 +15,4 @@ I will be adding 3 more per week. Feel free to use these however you would like
 3. [Pricing Page](https://uidesigndaily.com/posts/sketch-pricing-page-table-subscription-card-cards-day-1116)
 
 4. [Page Insights](https://uidesigndaily.com/posts/sketch-page-insights-stats-statistics-website-analytics-card-header-day-1125)
+5. [Dark Components](https://uidesigndaily.com/posts/sketch-dark-components-theme-ui-dropdown-menu-progress-bar-day-1112)
