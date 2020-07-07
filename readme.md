@@ -16,3 +16,4 @@ I will be adding 3 more per week. Feel free to use these however you would like
 
 4. [Page Insights](https://uidesigndaily.com/posts/sketch-page-insights-stats-statistics-website-analytics-card-header-day-1125)
 5. [Dark Components](https://uidesigndaily.com/posts/sketch-dark-components-theme-ui-dropdown-menu-progress-bar-day-1112)
+6. [Search](https://uidesigndaily.com/posts/sketch-search-filter-searchbar-day-1129)

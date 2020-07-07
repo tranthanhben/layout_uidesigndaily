@@ -1,0 +1,119 @@
+@import url("https://fonts.googleapis.com/css2?family=Muli:wght@400;700;800&display=swap");
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #edf4f3;
+  color: #2f3144;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  font-family: "Muli", sans-serif;
+}
+
+.container {
+  width: 1130px;
+  margin: auto;
+  background-color: #fff;
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  min-height: 400px;
+}
+.header {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 40px;
+}
+.left {
+  flex: 1;
+}
+.left h1 {
+  font-size: 28px;
+  font-weight: 800;
+  margin-bottom: 15px;
+}
+.left p {
+  font-size: 16px;
+  font-weight: normal;
+  margin: 0;
+}
+.right {
+  flex: 2;
+  display: flex;
+  justify-content: flex-end;
+}
+.right select {
+  width: 100%;
+  background-color: transparent;
+  color: #2f3144;
+  border: 1px solid #cdcdcd;
+  border-radius: 5px;
+  font-family: inherit;
+  font-size: 18px;
+  padding: 10px 15px;
+  margin-right: 15px;
+}
+.right .btn {
+  cursor: pointer;
+  border: 1px solid #2ecf9a;
+  border-radius: 5px;
+  background-color: #2ecf9a;
+  color: #fff;
+  font-size: 18px;
+  padding: 10px 60px;
+}
+.body {
+  width: 100%;
+}
+.features {
+  display: flex;
+  width: 100%;
+  background-color: #edf4f3;
+  justify-content: space-between;
+  padding: 30px;
+}
+.feature {
+  flex: 1;
+  max-width: 33.33333%;
+  position: relative;
+  padding-left: 44px;
+  margin: 0 15px;
+}
+.feature i {
+  position: absolute;
+  left: 0;
+  top: 5px;
+  /* width: 34px;
+	height: 34px; */
+  color: #2ecf9a;
+  font-size: 34px;
+}
+.feature h5 {
+  margin: 0 0 15px;
+  font-size: 18px;
+  font-weight: bold;
+  text-align: wrap;
+}
+.feature p {
+  margin: 0;
+  font-size: 16px;
+  font-weight: normal;
+}
+@media (max-width: 768px) {
+	.feature {
+		margin: 0;
+	}
+  .container {
+    flex-direction: column;
+  }
+  form {
+    border-right: 0;
+  }
+}
